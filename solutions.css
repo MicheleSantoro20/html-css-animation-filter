@@ -13,7 +13,7 @@
     transition: width 5s;
 }
 
-.ex-2-square:hover {
+.ex-2-square:active {
     width: 100%;
 }
 
@@ -49,3 +49,23 @@
 }
 
  /* Esercizio 6 */
+
+ .ex-6-img {
+    transition: filter 3s;
+ }
+
+ .ex-6-img:hover {
+    filter: grayscale(100%);
+ }
+
+ /* Esercizio 6 */
+
+ .ex-7-img {
+    transition: filter:grayscale 3s, filter:hue-rotate 5s 3s;
+    transition: 
+ }
+
+ .ex-7-img:hover {
+    filter: grayscale(100%);
+    filter: hue-rotate(90deg);
+ }
