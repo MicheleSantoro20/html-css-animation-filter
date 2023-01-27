@@ -58,14 +58,88 @@
     filter: grayscale(100%);
  }
 
- /* Esercizio 6 */
+ /* Esercizio 7 */
 
  .ex-7-img {
-    transition: filter:grayscale 3s, filter:hue-rotate 5s 3s;
-    transition: 
+    transition: filter 5s;
  }
 
  .ex-7-img:hover {
-    filter: grayscale(100%);
-    filter: hue-rotate(90deg);
+    filter: hue-rotate(180deg) brightness(200%);
+
+
  }
+
+ 
+ /* Esercizio 8 */
+
+ .ex-8-img {
+    transition: filter 5s, border-radius 3s;
+ }
+
+ .ex-8-img:hover {
+    filter: hue-rotate(180deg) brightness(200%);
+    border-radius: 30%;
+ }
+
+  /* Esercizio 9 */
+
+  .ex-9-img {
+    transition: filter 5s, border-radius 3s, transform 5s;
+ }
+
+ .ex-9-img:hover {
+    filter: hue-rotate(180deg) brightness(200%);
+    border-radius: 30%;
+    transform: scale(1.4);
+ }
+
+   /* Esercizio 10 */
+
+ #first-loading-circle {
+    animation-name: example;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+ }
+
+ @keyframes example {
+
+    0% {
+        transform: rotate(0);
+    }
+
+    
+    100% {
+        transform: rotate(-360deg);
+    }
+
+ }
+
+    /* Esercizio 11 */
+
+ #second-loading-circle:hover {
+    animation-name: gira;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+ }
+
+ @keyframes gira {
+    0% {
+        transform: rotate(0);
+    }
+    25% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(180);
+    }
+    75% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+ }
+  
